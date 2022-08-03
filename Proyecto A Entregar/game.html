@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto A Entregar/css/style.css">  
+
+    <title>Juego</title>
+
+</head>
+<body>
+    <nav>
+        <a href="./index.html">
+            <svg width="200" height="80">
+
+                <rect x="45" y="5" width="60" height="35" rx="5" fill="rgb(63, 103, 151)" id="screen_0"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" fill="rgb(177, 213, 228)" id="screen_1"></rect>
+
+                <polygon points="55 45, 95 45, 115 62, 30 62" fill="rgb(63, 103, 151)" id="keyboard_0"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" fill="rgb(177, 213, 228)" id="keyboard_1"></polygon>
+            </svg>
+
+        </a>
+
+        <ul class="menu">
+            <li class="item-menu"><a class="item-link" href="./historia.html">HISTORIA</a></li>
+            <li class="item-menu"><a class="item-link" href="./game.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="portada">JUGUEMOS UN POCO</h1>
+
+    </header>
+    <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+    <main>
+        <section class="game">
+            <div class="boxes">
+                <div id="boxdrop0">
+                    <p>Arrastre y suelte la imagen aqui.</p>
+                </div>
+                <div id="boxdrop1">
+                    <p>Arrastre y suelte la imagen aqui.</p>
+                </div>
+                <div id="boxdrop2">
+                    <p>Arrastre y suelte la imagen aqui.</p>
+                </div>
+
+            </div>
+            <div id="boxImg">
+                <img id="img0" src="./img/rompe2.png" alt="imagen_aleatoria">
+                <img id="img1" src="./img/Rompe1.png" alt="imagen_aleatoria">
+                <img id="img2" src="./img/Rompe3.png" alt="imagen_aleatoria">
+            </div>
+        </section>
+        <button onclick="reload()" class="botonesVid reload">Reiniciar</button>
+
+    </main>
+
+    <footer>
+        
+        <div class="footer-left">
+            <svg width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" fill="rgb(63, 103, 151)" id="screen_0"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" fill="rgb(177, 213, 228)" id="screen_1"></rect>
+
+                <polygon points="55 45, 95 45, 115 62, 30 62" fill="rgb(63, 103, 151)" id="keyboard_0"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" fill="rgb(177, 213, 228)" id="keyboard_1"></polygon>
+            </svg>
+            <h3 class="titulo-foot">PROGRAMACION <br> E <br> HISTORIA. </h3>
+
+        </div>
+
+        <div> Sitio con fines educativos - Creado por Santiago R. Apestey</div>
+
+    </footer>
+
+    <script src="./scriptGame.js"></script>
+
+</body>
+</html>
